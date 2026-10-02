@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación Fortnite</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: linear-gradient(135deg, #0a0a1a, #1a0a2e);
+            color: #fff;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(90deg, #00c4ff, #9d00ff);
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,196,255,0.3);
+        }
+        header h1 {
+            font-size: 2.8rem;
+            text-shadow: 0 0 15px rgba(255,255,255,0.5);
+        }
+        header p { font-size: 1.2rem; opacity: 0.9; }
+        nav {
+            background: #111;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: #00c4ff;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.4rem 0.9rem;
+            border-radius: 20px;
+            transition: all 0.3s;
+            font-size: 0.95rem;
+        }
+        nav a:hover {
+            background: #00c4ff;
+            color: #000;
+        }
+        section {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+        .card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(0,196,255,0.2);
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+        }
+        .card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            display: block;
+        }
+        .card-content {
+            padding: 1.8rem;
+        }
+        .card h2 {
+            color: #00c4ff;
+            margin-bottom: 0.8rem;
+            font-size: 1.8rem;
+        }
+        .card p {
+            color: #ddd;
+            font-size: 1.05rem;
+        }
+        /* Galería de 2 fotos juntas */
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .gallery img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 1px solid rgba(0,196,255,0.3);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #0a0a1a;
+            color: #888;
+            margin-top: 3rem;
+        }
+        @media (max-width: 700px) {
+            header h1 { font-size: 2rem; }
+            .card img { height: 220px; }
+            .gallery { grid-template-columns: 1fr; }
+            .gallery img { height: 200px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fortnite</h1>
+        <p>La batalla real que cambió los videojuegos</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#historia">Historia</a>
+        <a href="#gameplay">Gameplay</a>
+        <a href="#modos">Modos</a>
+        <a href="#mapa">Mapa</a>
+        <a href="#skins">Skins</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#colaboraciones">Colaboraciones</a>
+    </nav>
+
+    <!-- 1. Inicio -->
+    <section id="inicio">
+        <div class="card">
+            <img src="images/fortnite1.jpg" alt="Fortnite Battle Royale">
+            <div class="card-content">
+                <h2>¿Qué es Fortnite?</h2>
+                <p>
+                    Fortnite es un videojuego free-to-play desarrollado por Epic Games. 
+                    Lanzado en 2017, se convirtió en un fenómeno cultural gracias a su modo 
+                    Battle Royale, su sistema de construcción, sus eventos en vivo y sus 
+                    colaboraciones con marcas y artistas de todo el mundo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Historia -->
+    <section id="historia">
+        <div class="card">
+            <img src="images/historia2.jpg" alt="Historia de Fortnite">
+            <div class="card-content">
+                <h2>Historia y evolución</h2>
+                <p>
+                    Comenzó como un juego cooperativo de supervivencia (Save the World). 
+                    En septiembre de 2017 se lanzó el modo Battle Royale gratuito, que 
+                    impulsó su popularidad masiva. Desde entonces ha pasado por más de 
+                    30 temporadas y varios Capítulos completos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Gameplay -->
+    <section id="gameplay">
+        <div class="card">
+            <img src="images/gameplay3.jpg" alt="Gameplay de Fortnite">
+            <div class="card-content">
+                <h2>Gameplay y combate</h2>
+                <p>
+                    Hasta 100 jugadores caen en una isla, recolectan armas, materiales y 
+                    recursos. La mecánica única de Fortnite es la construcción: puedes 
+                    crear muros, rampas, pisos y techos en segundos para defenderte o 
+                    ganar altura.
+                </p>
+                <!-- Galería extra -->
+                <div class="gallery">
+                    <img src="images/construccion9.jpg" alt="Sistema de construcción">
+                    <img src="images/gameplay3.jpg" alt="Combate en Fortnite">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Modos -->
+    <section id="modos">
+        <div class="card">
+            <img src="images/modos4.jpg" alt="Modos de juego">
+            <div class="card-content">
+                <h2>Modos de juego</h2>
+                <p>
+                    Además del clásico Battle Royale (Solos, Dúos, Tríos, Escuadras), 
+                    existen Zero Build, Ranked, Creative, Festival, Lego Fortnite, 
+                    Rocket Racing y eventos limitados.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Mapa -->
+    <section id="mapa">
+        <div class="card">
+            <img src="images/mapa6.jpg" alt="Mapa de Fortnite">
+            <div class="card-content">
+                <h2>El mapa de la isla</h2>
+                <p>
+                    El mapa de Fortnite cambia cada temporada. Lugares icónicos como 
+                    Tilted Towers, Pleasant Park, Salty Springs o los nuevos puntos 
+                    de interés de cada Capítulo forman parte de la experiencia. 
+                    La tormenta obliga a los jugadores a moverse constantemente.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Skins -->
+    <section id="skins">
+        <div class="card">
+            <img src="images/skins7.jpg" alt="Skins de Fortnite">
+            <div class="card-content">
+                <h2>Skins y personalización</h2>
+                <p>
+                    Una de las mayores atracciones de Fortnite son sus skins. 
+                    Desde personajes originales hasta colaboraciones con superhéroes, 
+                    músicos y franquicias famosas. El Battle Pass de cada temporada 
+                    ofrece docenas de recompensas cosméticas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Eventos -->
+    <section id="eventos">
+        <div class="card">
+            <img src="images/eventos8.jpg" alt="Eventos en vivo de Fortnite">
+            <div class="card-content">
+                <h2>Eventos en vivo</h2>
+                <p>
+                    Fortnite es famoso por sus eventos masivos en tiempo real: 
+                    conciertos de Travis Scott y Ariana Grande, el final de capítulos, 
+                    invasiones alienígenas, agujeros negros y colisiones de mundos. 
+                    Millones de jugadores participan al mismo tiempo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Colaboraciones -->
+    <section id="colaboraciones">
+        <div class="card">
+            <img src="images/collab5.jpg" alt="Colaboraciones de Fortnite">
+            <div class="card-content">
+                <h2>Colaboraciones icónicas</h2>
+                <p>
+                    Marvel, Star Wars, DC, Nike, Dragon Ball, Naruto, The Weeknd, 
+                    Eminem y muchas más. Fortnite se ha convertido en una plataforma 
+                    cultural donde se cruzan videojuegos, música y cine.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Presentación creada para GitHub Pages • Fortnite © Epic Games</p>
+    </footer>
+</body>
+</html>
